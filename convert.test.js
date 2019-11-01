@@ -1,4 +1,4 @@
-const convert = require('./convert.js');
+const convert = require('./convert');
 
 test("Change ฿1.00 to $0.03", () => {
     expect(convert(1)).toEqual('$0.03');
