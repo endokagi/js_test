@@ -19,3 +19,7 @@ test("Change ฿-99.0000000001 to $-2.97", () => {
 test("Change ฿0.00 to $0.00", () => {
     expect(convert(0.00)).toEqual('$0.00');
 });
+
+test("add test toprint Not Money Na~~!", () => {
+    expect(convert("test")).toEqual('Not Money Na~~!');
+});

@@ -6,9 +6,9 @@
 // ฿1 = 0.03 usd
 
 function convert(currency) {
+    if (typeof currency === 'number') {
+        return `$${(currency * 0.03).toFixed(2)}`;
+    } else return 'Not Money Na~~!';
 
-    return `$${(currency*0.03).toFixed(2)}`; 
-    
 }
-
 module.exports = convert;
