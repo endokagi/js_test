@@ -13,7 +13,7 @@ test("Change ฿30.00 to $0.90", () => {
 });
 
 test("Change ฿-99.0000000001 to $-2.97", () => {
-    expect(convert(-99.0000000001)).toEqual('$-2.97');
+    expect(convert(-99.0000000001)).toBe('$-2.97');
 });
 
 test("Change ฿0.00 to $0.00", () => {
@@ -21,5 +21,5 @@ test("Change ฿0.00 to $0.00", () => {
 });
 
 test("add test toprint Not Money Na~~!", () => {
-    expect(convert("test")).toEqual('Not Money Na~~!');
+    expect(convert("test")).toBe('Not Money Na~~!');
 });
